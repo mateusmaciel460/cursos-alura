@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alugames</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="topo">
+        <img src="img/logo.svg" alt="Logo do Alugames"/>
+    </header>
+    <!-- HEADER --> 
+
+    <!-- MAIN -->
+    <main class="container">
+        <h1 class="container__titulo">
+            Total de Jogos alugados: 
+            <span class="container__span" id="resultado-jogos-alugados">0</span>
+        </h1>
+
+        <section class="container__sessao" id="sessao">
+            <div class="container__grupo" id="jogo-1">
+                <img src="img/monopoly.png" id="imagem-jogo" class="container__grupo-imagem"/>
+                <h2 class="container__grupo-titulo">Monopoly</h2>
+                <button onclick="alugarJogo(1)" id="botao-jogo" class="container__grupo-botao--disponivel">Alugar</button>
+            </div>
+
+            <div class="container__grupo" id="jogo-2">
+                <img src="img/ticket_to_ride.png" id="imagem-jogo" class="container__grupo-imagem"/>
+                <h2 class="container__grupo-titulo">Ticket to Ride</h2>
+                <button onclick="alugarJogo(2)" id="botao-jogo" class="container__grupo-botao--disponivel">Alugar</button>
+            </div>
+
+            <div class="container__grupo" id="jogo-3">
+                <img src="img/takenoko.png" id="imagem-jogo" class="container__grupo-imagem"/>
+                <h2 class="container__grupo-titulo">Takenoko</h2>
+                <button onclick="alugarJogo(3)" id="botao-jogo" class="container__grupo-botao--disponivel">Alugar</button>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN -->
+    
+    <!-- SCRIPT -->
+    <script src="js/app.js" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>
