@@ -4,53 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sorteador de Números</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="img/ia.png" type="image/x-icon">
 </head>
 <body>
     <!-- CONTAINER -->
     <main class="container">
-        <section class="container__conteudo">
-            <div class="container__informacoes">
-                <div class="container__texto">
-                    <h1>
-                        Sorteador 
-                        <span class="container__texto-azul"> de números</span>
-                    </h1>
+        <section class="container__section">
+            <h1 class="container__title">Sorteadorde Números</h1>
 
-                    <div class="container__campo">
-                        <label class="texto__paragrafo">Quantidade de números</label>
-                        <input type="number" id="quantidade" class="container__input" min="1"/>
-                    </div>
-
-                    <div class="container__campo">
-                        <label class="texto__paragrafo">Do número</label>
-                        <input type="number" id="de" class="container__input" min="1"/>
-                    </div>
-
-                    <div class="container__campo">
-                        <label class="texto__paragrafo">Até o número</label>
-                        <input type="number" id="ate" class="container__input" min="1"/>
-                    </div>
+            <div class="container__group">
+                <div class="container__layer">
+                    <label class="container__label">Quantidade de números</label>
+                    <input type="number" placeholder="00" id="quantidade" class="container__input"/>
                 </div>
 
-                <div class="container__botoes">
-                    <button class="container__botao" onclick="sortear()">Sortear</button>
-                    <button id="botao-reiniciar" class="container__botao-desabilitado" onclick="reiniciar()">Reiniciar</button>
+                <div class="container__layer">
+                    <label class="container__label">Do número</label>
+                    <input type="number" placeholder="00" id="de" class="container__input"/>
                 </div>
 
-                <div class="container__texto">
-                    <label class="texto__paragrafo">
-                        Números sorteados: 
-                        <span class="texto__span" id="resultado"> nenhum até agora</span>
-                    </label>
+                <div class="container__layer">
+                    <label class="container__label">Até o número</label>
+                    <input type="number" placeholder="00" id="ate" class="container__input"/>
                 </div>
             </div>
 
-            <img src="img/ia.png" alt="Uma pessoa com capacete de astronauta" class="container__imagem-pessoa"/>
+            <div class="container__buttons">
+                <button onclick="verificarCampo()" class="container__button" id="botao-sortear">Sortear</button>
+                <button onclick="reiniciar()" class="container__button--disabled" id="botao-reiniciar">Reiniciar</button>
+            </div>
+        </section>
+
+        <section class="container__section container__section--center">
+            <img src="img/ia.png" class="container__image"/>
+            <h2 class="container__subtitle">
+                Números sorteados: <br/> <span class="container__span" id="resultado">nenhum até agora</span>
+            </h2>
         </section>
     </main>
     <!-- CONTAINER -->

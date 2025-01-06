@@ -4,6 +4,26 @@ let ate = document.querySelector('#ate');
 let resultado = document.querySelector('#resultado');
 let botaoReiniciar = document.querySelector('#botao-reiniciar');
 
+function verificarCampo() {
+    let valoresCampos = (de.value && ate.value && quantidade.value);
+    let verificarCampoVazio = valoresCampos == '';
+    let verificarNumeroNegativo = (valoresCampos < 0);
+
+    if (verificarCampoVazio) {
+        resultado.innerHTML = `
+        <span class="container__span-red" id="resultado">
+            Preencha todos os campos!
+        </span>`;
+    } else if (verificarNumeroNegativo) {
+        resultado.innerHTML = `
+        <span class="container__span-red" id="resultado">
+            Não é permitido números negativos!
+        </span>`;
+    } else {
+        sortear();
+    }
+}
+
 function sortear() {
     let valorQuantidade = quantidade.value;
     let valorDe = de.value;
@@ -33,6 +53,7 @@ function sortear() {
     }
 
     resultado.innerHTML = `${listaDeNumerosSorteados.join(', ')}`;
+    document.querySelector('#botao-reiniciar').classList = 'container__button--disabled';
     alterarStatusBotao();
 }
 
@@ -49,12 +70,12 @@ function reiniciar() {
 function alterarStatusBotao() {
     let classeBotaoReiniciar = botaoReiniciar.classList;
 
-    if (classeBotaoReiniciar.contains('container__botao-desabilitado')) {
-        classeBotaoReiniciar.remove('container__botao-desabilitado');
-        classeBotaoReiniciar.add('container__botao');
+    if (classeBotaoReiniciar.contains('container__button--disabled')) {
+        classeBotaoReiniciar.remove('container__button--disabled');
+        classeBotaoReiniciar.add('container__button');
     } else {
-        classeBotaoReiniciar.add('container__botao-desabilitado');
-        classeBotaoReiniciar.remove('container__botao');
+        classeBotaoReiniciar.add('container__button--disabled');
+        classeBotaoReiniciar.remove('container__button');
     }
 }
 
