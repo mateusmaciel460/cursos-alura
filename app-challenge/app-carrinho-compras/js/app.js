@@ -10,10 +10,11 @@ function adicionar() {
     let precoTotal = precoProduto * quantidade;
 
     listaProdutos.innerHTML += `
-        <section class="carrinho__produtos__produto">
-            <span class="texto-azul">${quantidade}x</span> ${nomeProduto} <span class="texto-azul">R$${precoProduto}</span>
-        </section>
-    `;
+        <ul class="container__menu-list">
+            <li class="container__menu-item">
+                ${quantidade}x <span class="container__span-black">${nomeProduto}</span> R$${precoProduto}
+            </li>
+        </ul>`;
 
     precoGeral = precoGeral + precoTotal;
     valorTotal.innerHTML = `R$ ${precoGeral}`;

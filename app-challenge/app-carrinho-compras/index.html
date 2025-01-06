@@ -1,76 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;600;700&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
-
-  <title>Carrinho de compras</title>
-  <link rel="shortcut icon" href="assets/icone-carrinho.svg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/icone-carrinho.svg" type="image/x-icon">
 </head>
-
 <body>
-  <main class="conteudo-principal">
-    <div class="grafismo-azul"></div>
-    <section class="adicionar-produto">
-      <h1 class="titulo">
-        Carrinho de <span class="texto-azul">compras</span>
-      </h1>
+    <!-- CONTAINER -->
+    <main class="container">
+        <section class="container__section">
+            <h1 class="container__title">Carrinho de <span class="container__span">compras</span></h1>
 
-      <form class="formulario">
-        <label class="campo-grupo">
-          <span class="texto-medio-azul">Produto</span>
-          <select class="produto-input" name="produto" id="produto">
-            <option value="Fone de ouvido - R$100">Fone de ouvido - R$100</option>
-            <option value="Celular - R$1400">Celular - R$1400</option>
-            <option value="Oculus VR - R$5000">Oculus VR - R$5000</option>
-          </select>
-          </div>
-        </label>
+            <div class="container__layer">
+                <label class="container__label">Produto</label>
+                <select class="container__input container__input--select" id="produto">
+                    <option value="Fone de ouvido - R$100">Fone de ouvido - R$100</option>
+                    <option value="Celular - R$1400">Celular - R$1400</option>
+                    <option value="Oculus - R$5000">Oculus - R$5000</option>
+                </select>
+            </div>
 
-        <section class="parte-inferior">
-          <label class="campo-grupo">
-            <span class="texto-medio-azul">Qtde.</span>
-            <input class="quantidade-input" id="quantidade" type="number" placeholder="100">
-          </label>
+            <div class="container__layer">
+                <label class="container__label">Qtde</label>
+                <div class="container__layer--secondary">
+                    <input type="number" class="container__input container__input--extra" id="quantidade" placeholder="100"/>
+                    <button onclick="validarCampo()" class="container__button container__button--blue">Adicionar</button>
+                    <button onclick="limpar()" class="container__button container__button--gray">Limpar</button>
+                </div>
+            </div>
 
-          <section class="botoes-wrapper">
-            <button onclick="validarCampo()" type="button" id="btn-adicionar" class="botao-form botao-adicionar">Adicionar</button>
-            <button onclick="limpar()" type="button" class="botao-form botao-limpar">Limpar</button>
-          </section>
+            <div class="container__layer" id="texto-aviso"></div>
         </section>
 
-        <div id="texto-aviso">
-          <p></p>
-        </div>
-      </form>
-    </section>
-    <section class="carrinho">
-      <img src="./assets/carrinho-cinza.svg" alt="Imagem de um carrinho de compras cinza">
+        <section class="container__section">
+            <img src="assets/carrinho-cinza.svg" class="container__image--uper"/>
 
-      <div class="titulo-wrapper">
-        <img src="./assets/icone-carrinho.svg" alt="ícone de carrinho">
+            <div class="container__group">
+                <img src="assets/icone-carrinho.svg" class="container__image"/>
+                <h2 class="container__subtitle">Produtos no carrinho</h2>
+            </div>
 
-        <h2 class="carrinho__titulo">Produtos no carrinho</h2>
-      </div>
+            <div class="container__group">
+                <ul class="container__menu-list" id="lista-produtos"></ul>
+            </div>
 
-      <section class="carrinho__produtos" id="lista-produtos"></section>
-
-      <div class="divisoria"></div>
-
-      <p class="carrinho__total">
-        Total: <span class="texto-azul" id="valor-total">R$ 0</span>
-      </p>
-    </section>
-  </main>
-
-  <script src="js/app.js"></script>
+            <div class="container__group">
+                <h2 class="container__subtitle--lower">
+                    Total: <span class="container__span" id="valor-total">R$1400</span>
+                </h2>
+            </div>
+        </section>
+    </main>
+    <!-- CONTAINER -->
+    
+    <!-- SCRIPT -->
+    <script src="js/app.js" defer></script>
+    <!-- SCRIPT -->
 </body>
-
 </html>
