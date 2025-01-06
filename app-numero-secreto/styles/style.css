@@ -1,140 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: white;
 }
 
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-body::before {
-    background-image: url("../img/codigo.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
+    background: #041832;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
-    width: 80%;
-    height: 80%;
+    background: #FFFFFF;
+    padding: 2em;
+    margin: 2em 5em;
+    border: 2px solid #1875E8;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    border-radius: 24px;
-    border: 1px solid #1875E8;
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("../img/ruido.png");
-    background-size: 100% 100%;
-    position: relative;
 }
 
-
-.container__conteudo {
+.container__section {
     display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 0;
+    flex-direction: column;
+    gap: 1.5em;
+    width: 80%;
 }
 
-.container__informacoes {
-    flex: 1;
-    padding: 3rem;
+.container__title {
+    font-size: 4em;
 }
 
-.container__botao {
-    border-radius: 16px;
-    background: #1875E8;
-    padding: 16px 24px;
-    width: 100%;
-    font-size: 24px;
-    font-weight: 700;
-    border: none;
-    margin-top: 2rem;
-}
-
-.container__texto {
-    margin: 16px 0 16px 0;
-}
-
-.container__texto-azul {
-    color: #1875E8;
+.container__text {
+    background: #37cd37;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 8px;
+    padding: 0.3em;
 }
 
 .container__input {
-    width: 100%;
-    height: 72px;
-    border-radius: 16px;
-    background-color: #FFF;
-    border: none;
-    color: #1875E8;
-    padding: 2rem;
-    font-size: 24px;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    padding: 0.5em;
+    border: 2px solid #1875E8;
+    border-radius: 8px;
+    outline: none;
 }
 
-.container__botoes {
+.container__buttons {
     display: flex;
-    gap: 2em;
+    justify-content: space-between;
 }
 
-h1 {
-    font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
-    padding-bottom: 3rem;
-}
-
-p,
 button {
-    font-family: 'Inter', sans-serif;
-}
-
-.texto__paragrafo {
-    font-size: 32px;
-    font-weight: 400;
+    font-size: 2em;
+    padding: 0.5em 2em;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 button:disabled {
-    background-color: gray;
+    background: #585252;
+    cursor: not-allowed;
 }
 
-@media screen and (max-width: 1250px) {
+.container__button {
+    background: #1875E8;
+}
 
-    h1 {
-        font-size: 50px;
-    }
+.container__image {
+    width: 78%;
+}
 
-    .container__botao {
-        font-size: 16px;
-    }
+.container__section--center {
+    align-items: center;
+}
 
+/* Versão 01 - Jogo do Número Secreto (v1) */
+.container__image--special {
+    width: 8%;
+}
 
-    .texto__paragrafo {
-        font-size: 24px;
-    }
-
-    .container__imagem-pessoa {
-        display: none;
-    }
-
-    .container__conteudo {
-        display: block;
-        position: inherit;
-    }
-
-    .container__informacoes {
-        padding: 1rem
-    }
+.container__section-total {
+    align-items: center;
+    width: 100%;
 }
