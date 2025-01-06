@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    background: #041832;
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container__section {
+    background: url('../images/background.png');
+    border: 2px solid #00F4BF;
+    border-radius: 5px;
+    padding: 0 2em;
+    margin: 1.4em 5em;
+}
+
+.container__group {
+    display: flex;
+    gap: 3em;
+    align-items: end;
+}
+
+.container__layer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.container__input {
+    background: transparent;
+    border: 2px solid #00F4BF;
+    border-radius: 5px;
+    font-size: 2em;
+    padding: 0.4em 1.5em 0.4em 0.4em;
+    color: #FFFFFF;
+}
+
+.container__button {
+    background: #1875E8;
+    border: none;
+    color: #FFFFFF;
+    font-size: 2em;
+    padding: 0.4em 1em;
+    border-radius: 8px;
+    box-shadow: #041832 1px 2px 1px 2px;
+    cursor: pointer;
+}
+
+.container__menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    padding: 0 2.5em;
+}
+
+.container__menu-item {
+    font-size: 1.6em;
+    list-style: none;
+    text-align: center;
+}
+
+.container__menu-span {
+    color: #00F4BF;
+    font-weight: 600;
+}
+
+/* EXTRA */
+
+.container__group--lower {
+    align-items: center;
+    border-top: 2px solid #00F4BF;
+    margin-top: 1em;
+    padding: 1em 0;
+}
+
+.container__title {
+    font-size: 4em;
+}
+
+.container__subtitle {
+    font-size: 2em;
+}
+
+.container__alert {
+    background: #e12020;
+    font-size: 1.1em;
+    padding: 0.3em;
+    border-radius: 5px;
+    border: 2px solid #FFFFFF;
+}
+
+.container__span {
+    color: #1875E8;
+}
+
+.container__limit {
+    width: 12%;
+}
+
+.container__label {
+    font-size: 2em;
+}
+
+#tipo-ingresso {
+    appearance: none;
+    background: url('../images/arrow-down.png') no-repeat right 1rem top 50%;
+    width: 100%;
+}
+
+#qtd {
+    padding: 0.4em;
+    text-align: center;
+}
+
+.container__option {
+    color: #041832;
+}
