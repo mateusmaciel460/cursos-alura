@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+</head>
+<body>
+    <!-- CONTAINER -->
+    <main class="container">
+        <section class="container__section">
+            <h1 class="container__title">Amigo <span class="container__span">Secreto</span></h1>
+
+            <div class="container__layer">
+                <label class="container__label">Digite o nome de um amigo</label>
+                <input type="text" id="campo-nome-amigo" placeholder="Nome do amigo" class="container__input"/>
+            </div>
+
+            <div class="container__group container__group-buttons">
+                <button onclick="verificarCampo()" id="botao-adicionar" class="container__button-blue">Adicionar</button>
+                <button onclick="verificarAmigoIncluido()" id="botao-sortear" class="container__button-white">Sortear</button>
+                <button onclick="reiniciar()" id="botao-reiniciar" class="container__button-green" disabled>Reiniciar</button>
+
+            </div>
+
+            <div class="container__group container__group--alert">
+                <p id="campo-alerta-mensagem"></p>
+            </div>
+        </section>
+
+        <section class="container__section">
+            <div class="container__layer">
+                <h2 class="container__subtitle">Amigos incluídos</h2>
+                <div class="container__block" id="lista-amigos-incluidos"></div>
+            </div>
+
+            <div class="container__layer">
+                <h2 class="container__subtitle">Sorteio</h2>
+                <div class="container__block" id="lista-amigos-sorteio"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="container">
+        <section class="container__section">
+            <div class="container__layer">
+                <h2 class="container__subtitle">Relação de amigos</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <td>Amigo</td>
+                            <td>Editar</td>
+                            <td>Apagar</td>
+                        </tr>
+                    </thead>
+                    
+                    <tbody id="relacao-amigos"></tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+    <!-- CONTAINER -->
+
+    <!-- SCRIPT -->
+    <script src="js/app.js" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>
