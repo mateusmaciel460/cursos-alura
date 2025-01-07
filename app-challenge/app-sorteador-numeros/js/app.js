@@ -73,9 +73,13 @@ function alterarStatusBotao() {
     if (classeBotaoReiniciar.contains('container__button--disabled')) {
         classeBotaoReiniciar.remove('container__button--disabled');
         classeBotaoReiniciar.add('container__button');
+
+        botaoReiniciar.removeAttribute('disabled');
     } else {
         classeBotaoReiniciar.add('container__button--disabled');
         classeBotaoReiniciar.remove('container__button');
+
+        botaoReiniciar.setAttribute('disabled', true);
     }
 }
 

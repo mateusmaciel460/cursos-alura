@@ -14,7 +14,7 @@ function comprarTipo(quantidade, tipo) {
     if (calculoDiferenca < 0) {
         aviso.innerHTML = `<p class="container__alert">Não temos ${quantidade} cadeiras disponíveis para ${tipo}!</p>`;
     } else if (quantidade < 0){ 
-        aviso.innerHTML = `<p class="container__alert">A quantidade deve ser um número inteiro!</p>`;
+        aviso.innerHTML = `<p class="container__alert">A quantidade deve ser um número positivo!</p>`;
     } else {
         quantidadeTipo.textContent = calculoDiferenca;
         aviso.innerHTML = '';

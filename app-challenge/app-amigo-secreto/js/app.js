@@ -21,20 +21,15 @@ function verificarAmigoIncluido() {
 function verificarCampo() {
     let nomeAmigo = campoNomeAmigo.value;
     let verificarRepeticaoDeAmigo = listagemAmigosAdicionados.includes(nomeAmigo);
-    let buscarNomeIdentifico;
 
-    listagemAmigosAdicionados.forEach((amigos) => {
-        buscarNomeIdentifico = amigos.toLowerCase();
-    });
-
-    let verificarNomeIdentico = nomeAmigo.toLowerCase() == buscarNomeIdentifico;
+    let verificarRepeticaoDeAmigoIdentifico = listagemAmigosAdicionados.join(',').toLowerCase().includes(nomeAmigo.toLowerCase());
 
     botaoAdicionar.textContent = 'Adicionar';
     botaoSortear.removeAttribute('disabled');
 
     if (nomeAmigo == '') {
         campoMensagemAlerta.innerHTML = '<p class="container__alert">Digite o nome do amigo!<p>';
-    } else if (verificarRepeticaoDeAmigo || verificarNomeIdentico) {
+    } else if (verificarRepeticaoDeAmigo || verificarRepeticaoDeAmigoIdentifico) {
         campoMensagemAlerta.innerHTML = `<p class="container__alert">O nome ${nomeAmigo} já foi adicionado, tente outro!</p>`;
     } else {
         campoMensagemAlerta.innerHTML = '';
@@ -92,7 +87,8 @@ function removerAmigo(amigo) {
 
     let relacaoAmigos = document.querySelector('#relacao-amigos');
 
-    document.querySelector('#lista-amigos-incluidos').innerHTML = '';
+    document.querySelector('#lista-amigos-incluidos').innerHTML =  `${listagemAmigosAdicionados.join(', ')}`;
+    document.querySelector('#lista-amigos-sorteio').innerHTML = '';
     relacaoAmigos.innerHTML = '';
 
     listarDaRelacaoEntreAmigos();
