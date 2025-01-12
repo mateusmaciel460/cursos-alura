@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #1f1f20;
+    font-family: "Poppins", sans-serif;
+    color: #FFFFFF;
+}
+
+.conteudo {
+    padding: 3em;
+}
+
+.conteudo__secao {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.conteudo__titulo {
+    font-size: 3em;
+    text-align: center;
+}
+
+.conteudo__grupo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+}
+
+.conteudo__camada {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.conteudo__rotulo {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.conteudo__caixa-texto {
+    background: transparent;
+    color: #FFFFFF;
+    border: 2px solid #2b4c7e;
+    border-radius: 0.4em;
+    font-size: 1.8em;
+    padding: 0.4em;
+    width: 100%;
+}
+
+button {
+    padding: 0.5em 1em;
+    font-size: 2em;
+    color: #FFFFFF;
+    border-radius: 0.4em;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.conteudo__botao-azul {
+    background: #2b4c7e;
+}
+
+.conteudo__botao-cinza {
+    background: #433b3b;
+    cursor: not-allowed;
+}
+
+.conteudo__subtitulo {
+    font-size: 2em;
+    background: #d01616;
+    padding: 0.4em;
+    border-radius: 0.4em;
+    border: 2px solid #FFFFFF;
+    text-align: center;
+}
+
+@media screen and (max-width: 714px) {
+    .conteudo__grupo {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .conteudo__grupo--botoes {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 506px) {
+    .conteudo__titulo {
+        font-size: 2em;
+    }
+
+    .conteudo__rotulo, 
+    .conteudo__caixa-texto, button,
+    .conteudo__subtitulo {
+        font-size: 1.5em;
+    }
+}

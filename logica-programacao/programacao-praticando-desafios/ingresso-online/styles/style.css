@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0f132e;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em;
+}
+
+.conteudo__secao {
+    border: 2px solid #eac195;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    margin: 0.4em;
+    gap: 2em;
+}
+
+.conteudo__grupo {
+    align-items: end;
+    display: flex;
+    gap: 1em;
+}
+
+.conteudo__camada {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+}
+
+.conteudo__titulo {
+    background: #13444d;
+    text-align: center;
+    padding: 0.3em;
+    border-radius: 0.4em;
+    border: 2px solid #FFFFFF;
+    font-size: 3em;
+}
+
+.conteudo__rotulo {
+    font-size: 1.8em;
+}
+
+.conteudo__caixa-texto {
+    background: #0f132e;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    padding: 0.4em;
+    border: 1px solid #eac195;
+    border-radius: 0.5em;
+    outline: none;
+}
+
+#quantidade {
+    width: 100%;
+}
+
+.conteudo__botao {
+    background: #44749d;
+    border: none;
+    font-size: 2em;
+    padding: 0.3em 1em;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 0.6em;
+    cursor: pointer;
+}
+
+table, tr, td, td, th {
+    text-align: center;
+    padding: 0.3em;
+}
+
+thead {
+    background: #44749d;
+}
+
+tbody {
+    background: #FFFFFF;
+    color: #0f132e;
+}
+
+.conteudo__mensagem {
+    background: #ff2e2e;
+    padding: 0.4em;
+    font-size: 1.1em;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+@media screen and (max-width: 1299px) {
+    .conteudo__grupo {
+        flex-wrap: wrap;
+    }
+
+    .conteudo__camada {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1061px) {
+    .conteudo__titulo {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 787px) {
+    .conteudo {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0.5em;
+    }
+
+    .conteudo__titulo,
+    .conteudo__rotulo,
+    .conteudo__caixa-texto,
+    .conteudo__botao {
+        font-size: 1.5em;
+    }
+}

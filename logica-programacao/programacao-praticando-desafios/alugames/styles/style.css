@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2b4c7e;
+    font-family: "Poppins", sans-serif;
+}
+
+.conteudo {
+    padding: 2em;
+}
+
+.conteudo__titulo {
+    font-size: 2.5em;
+    text-align: center;
+    padding: 0.3em 0;
+    border-radius: 0.4em;
+    color: #FFFFFF;
+}
+
+.conteudo__grupo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+.conteudo__camada {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.conteudo__camada-imagem {
+    width: 100%;
+}
+
+.conteudo__camada-titulo {
+    color: #FFFFFF;
+    font-size: 2em;
+    text-align: center;
+}
+
+button {
+    border: none;
+    color: #FFFFFF;
+    padding: 0.8em;
+    font-size: 1.3em;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+}
+
+.conteudo__camada-botao--azul {
+    background: #2121dc;
+}
+
+.conteudo__camada-botao--cinza {
+    background: #484848;
+}
+
+@media screen and (max-width: 782px) {
+    .conteudo__grupo {
+        align-items: center;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 644px) {
+    .conteudo__grupo {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 3em;
+    }
+}

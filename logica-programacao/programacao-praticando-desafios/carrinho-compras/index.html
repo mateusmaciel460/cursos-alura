@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Carrinho de compras</h1>
+
+            <div class="conteudo__grupo conteudo__grupo-quebra">
+                <label class="conteudo__rotulo">Produto</label>
+                <select class="conteudo__caixa-texto" id="produtos">
+                    <option value="Fone de ouvido - R$100">Fone de ouvido - R$ 100</option>
+                    <option value="Celular - R$1400">Celular - R$ 1400</option>
+                    <option value="Oculus - R$5000">Oculus - R$ 5000</option>
+                </select>
+            </div>
+    
+            <div class="conteudo__grupo conteudo__grupo-quebra">
+                <label class="conteudo__rotulo">Qtde</label>
+
+                <div class="conteudo__camada conteudo__camada-botoes">
+                    <input class="conteudo__caixa-texto" id="quantidade" placeholder="100"/>
+                    <button onclick="adicionar()" class="conteudo__botao conteudo__botao-azul">Adicionar</button>
+                    <button onclick="limpar()" id="botao-limpar" class="conteudo__botao conteudo__botao-cinza" disabled>Limpar</button>
+                </div>
+            </div>
+
+            <p id="mensagem"></p>
+        </section>
+
+        <section class="conteudo__secao">
+            <div class="conteudo__grupo conteudo__grupo-quebra">
+                <div class="conteudo__camada conteudo__camada-carrinho">
+                    <img src="images/icone-carrinho.svg"/>
+                    <h2 class="conteudo__subtitulo">Produtos no carrinho</h2>
+                </div>
+
+                <ul class="conteudo__menu-lista" id="produtos-adicionados"></ul>
+                <h3 class="conteudo__resultado" id="preco-total">Total: R$ 0</h3>
+            </div>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js" defer></script>
+    <!-- JAVASCRIPT -->
+</body>
+</html>

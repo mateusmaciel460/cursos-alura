@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Amigo Secreto</h1>
+
+            <div class="conteudo__grupo">
+                <label class="conteudo__rotulo">Digite o nome de um amigo</label>
+                <input type="text" id="nome-amigo" placeholder="Nome do amigo" class="conteudo__caixa-texto"/>
+            </div>
+
+            <div class="conteudo__botoes">
+                <button onclick="adicionar()" id="botao-adicionar" class="conteudo__botao conteudo__botao-azul">Adicionar</button>
+                <button onclick="sortear()" id="botao-sortear" class="conteudo__botao conteudo__botao-laranja">Sortear</button>
+                <button onclick="reiniciar()" id="botao-reiniciar" class="conteudo__botao conteudo__botao-cinza" disabled>Reiniciar</button>
+            </div>
+
+            <p id="mensagem"></p>
+        </section>
+
+        <section class="conteudo__secao">
+            <div class="conteudo__grupo">
+                <h2 class="conteudo__subtitulo">Amigos incluídos</h2>
+                <div class="conteudo__camada" id="amigos-incluidos"></div>
+            </div>
+
+            <div class="conteudo__grupo">
+                <h2 class="conteudo__subtitulo">Sorteio</h2>
+                <div class="conteudo__camada" id="amigos-sorteados"></div>
+            </div>
+        </section>
+
+        <section class="conteudo__secao">
+            <h2 class="conteudo__subtitulo">Relação de amigos</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <td>#</td>
+                        <td>Amigo</td>
+                        <td>Ações</td>
+                    </tr>
+                </thead>
+
+                <tbody id="relacao-amigos-adicionados"></tbody>
+            </table>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js" defer></script>
+    <!-- JAVASCRIPT -->
+</body>
+</html>

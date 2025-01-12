@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresso Online</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Compre seu ingresso</h1>
+
+            <div class="conteudo__grupo">
+                <div class="conteudo__camada">
+                    <label class="conteudo__rotulo">Escolha o tipo</label>
+                    <select class="conteudo__caixa-texto" id="tipo">
+                        <option value="pista">Pista</option>
+                        <option value="cadeira-superior">Cadeira superior</option>
+                        <option value="cadeira-inferior">Cadeira inferior</option>
+                    </select>
+                </div>
+
+                <div class="conteudo__camada">
+                    <label class="conteudo__rotulo">Qtd</label>
+                    <input type="number" id="quantidade" placeholder="00" value="100" class="conteudo__caixa-texto"/>
+                </div>
+                
+                <div class="conteudo__camada">
+                    <button onclick="comprar()" class="conteudo__botao">Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo__secao">
+            <table class="conteudo__tabela">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <td>Pista</td>
+                        <td>Cadeira Superior</td>
+                        <td>Cadeira inferior</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Valores</th>
+                        <td id="valor-pista">100</td>
+                        <td id="valor-cadeira-superior">100</td>
+                        <td id="valor-cadeira-inferior">100</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p id="mensagem"></p>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+    
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js" defer></script>
+    <!-- JAVASCRIPT -->
+</body>
+</html>

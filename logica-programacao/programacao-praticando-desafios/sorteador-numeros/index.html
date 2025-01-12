@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Sorteador de Números</h1>
+
+            <div class="conteudo__grupo">
+                <div class="conteudo__camada">
+                    <label class="conteudo__rotulo">Quantidade</label>
+                    <input type="number" id="quantidade" placeholder="00" class="conteudo__caixa-texto"/>
+                </div>
+                <div class="conteudo__camada">
+                    <label class="conteudo__rotulo">Inicial</label>
+                    <input type="number" id="numero-inicial" placeholder="00" class="conteudo__caixa-texto"/>
+                </div>
+                <div class="conteudo__camada">
+                    <label class="conteudo__rotulo">Final</label>
+                    <input type="number" id="numero-final" placeholder="00" class="conteudo__caixa-texto"/>
+                </div>
+            </div>
+
+            <div class="conteudo__grupo conteudo__grupo--botoes">
+                <button onclick="sortear()" class="conteudo__botao-azul">Sortear</button>
+                <button onclick="reiniciar()" id="botao-reiniciar" class="conteudo__botao-cinza">Reiniciar</button>
+            </div>
+
+            <div class="conteudo__grupo">
+                <p class="conteudo__subtitulo" id="mensagem">
+                    Números sorteados: nenhum até agora
+                </h2>
+            </div>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+    <!-- JAVASCRIPT -->
+</body>
+</html>

@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #2e2633;
+    color: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.conteudo__secao {
+    border: 2px solid #dce9be;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.conteudo__titulo {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.conteudo__grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.conteudo__rotulo {
+    font-size: 1.3em;
+}
+
+.conteudo__caixa-texto {
+    background: #2e2633;
+    color: #FFFFFF;
+    border: 2px solid #efffcd;
+    border-radius: 0.3em;
+    padding: 0.4em;
+    font-size: 1.5em;
+}
+
+.conteudo__botoes {
+    align-items: center;
+    display: flex;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+.conteudo__botao {
+    padding: 0.5em;
+    border: none;
+    font-size: 1.5em;
+    color: #FFFFFF;
+    font-weight: 600;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+.conteudo__botao:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.conteudo__botao-azul {
+    background: #2f7579;
+}
+
+.conteudo__botao-laranja {
+    background: #ff360e;
+}
+
+.conteudo__botao-cinza {
+    background: #736b6b;
+}
+
+.conteudo__subtitulo {
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.conteudo__camada {
+    border: 2px solid #5e9fa3;
+    padding: 1.2em;
+    border-radius: 0.5em;
+    font-size: 1.4em;
+    text-align: center;
+}
+
+.conteudo__mensagem {
+    background: #df4949;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    border-radius: 0.5em;
+    border: 2px solid #dce9be;
+}
+
+table {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+thead {
+    background: #5e9fa3;
+}
+
+tbody {
+    background: #dce9be;
+    color: #2e2633;
+}
+
+td {
+    padding: 0.3em;
+}
+
+td button {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 0.8em;
+    padding: 0.5em;
+    border: none;
+}
+
+@media screen and (max-width: 1258px) {
+    .conteudo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 886px) {
+    .conteudo {
+        grid-template-columns: repeat(1, 1fr);
+        justify-self: auto;
+        padding: 0;
+    }
+
+    .conteudo__secao {
+        border: none;
+    }
+}
