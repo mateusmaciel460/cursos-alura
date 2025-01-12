@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do Número Secreto</title>
+    <link rel="stylesheet" href="../logica-programacao-funcoes-listas/styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <div class="conteudo__grupo">
+                <h1 class="conteudo__titulo"></h1>
+                <p class="conteudo__texto"></p>
+            </div>
+            
+            <div class="conteudo__grupo">
+                <input type="number" placeholder="00" class="conteudo__caixa-texto" id="chute"/>
+            </div>
+
+            <div class="conteudo__grupo conteudo__grupo--botoes">
+                <button class="conteudo__botao" id="botao-chutar" onclick="iniciarJogo()">Chutar</button>
+                <button onclick="reiniciarJogo()" class="conteudo__botao" id="botao-reiniciar" disabled>Reiniciar</button>
+            </div>
+
+            <h4 id="mensagem-aviso"></p>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+    <!-- JAVASCRIPT -->
+</body>
+</html>
