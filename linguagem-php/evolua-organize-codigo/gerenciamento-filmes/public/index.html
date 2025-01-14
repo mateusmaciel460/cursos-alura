@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Filmes</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <h1 class="conteudo__titulo">Gerenciamento de Filmes</h1>
+
+        <form action="php/exportar-arquivo.php" method="post" class="conteudo__formulario">
+            <div class="conteudo__camada">
+                <div class="conteudo__grupo">
+                    <label class="conteudo__rotulo">Nome</label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="conteudo__caixa-texto"/>
+                </div>
+    
+                <div class="conteudo__grupo">
+                    <label class="conteudo__rotulo">Ano de Lançamento</label>
+                    <input type="text" name="ano" id="ano" placeholder="Digite o ano de lançamento" class="conteudo__caixa-texto"/>
+                </div>
+    
+                <div class="conteudo__grupo">
+                    <label class="conteudo__rotulo">Nota</label>
+                    <input type="number" name="nota" id="nota" placeholder="Digite seu nome" class="conteudo__caixa-texto"/>
+                </div>
+    
+                <div class="conteudo__grupo">
+                    <label class="conteudo__rotulo">Gênero</label>
+                    <select class="conteudo__caixa-texto" name="genero" id="genero">
+                        <option value="Ação">Ação</option>
+                        <option value="Comédia">Comédia</option>
+                        <option value="Drama">Drama</option>
+                    </select>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" class="conteudo__botao"/>
+        </form>
+    </main>
+    <!-- CONTEÚDO -->
+</body>
+</html>
