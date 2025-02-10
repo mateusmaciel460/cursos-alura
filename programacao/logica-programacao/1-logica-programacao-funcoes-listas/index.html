@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Secreto</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/GvBj1HNc/imagem-jogo-numero-secreto.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Jogo do número secreto</h1>
+
+            <div class="conteudo__bloco conteudo__vertical">
+                <p class="conteudo__texto">Acertou!</p>
+                <input type="number" id="chute" name="chute" placeholder="Digite um número inteiro" class="conteudo__caixa-texto"/>
+            </div>
+
+            <div class="conteudo__bloco conteudo__horizontal">
+                <button onclick="chutar()" id="chutar" class="conteudo__botao conteudo__botao-azul">Chutar</button>
+                <button onclick="reiniciar()" id="reiniciar" class="conteudo__botao conteudo__botao-cinza" disabled>Reiniciar</button>
+            </div>
+
+            <p class="conteudo__mensagem" id="mensagem"></p>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <script src="script.js" defer></script>
+</body>
+</html>
