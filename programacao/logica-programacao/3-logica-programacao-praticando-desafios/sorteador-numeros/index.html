@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador de Números</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/SXRHcTkg/imagem-sorteador.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Sorteador de números</h1>
+
+            <div class="conteudo__bloco conteudo__vertical">
+                <input type="number" id="numero-inicial" name="numero-inicial" placeholder="Número inicial" class="conteudo__caixa-texto"/>
+                <input type="number" id="numero-final" name="numero-final" placeholder="Número final" class="conteudo__caixa-texto"/>
+                <input type="number" id="numero-quantidade" name="numero-quantidade" placeholder="Quantidade de números" class="conteudo__caixa-texto"/>
+            </div>
+
+            <div class="conteudo__bloco conteudo__horizontal">
+                <button onclick="sortear()" id="sortear" class="conteudo__botao conteudo__botao-azul">Sortear</button>
+                <button onclick="reiniciar()" id="reiniciar" class="conteudo__botao conteudo__botao-cinza" disabled>Reiniciar</button>
+            </div>
+
+            <p class="conteudo__texto">
+                Números sorteados: 
+                <span class="conteudo__destaque" id="mostrar-numeros-sorteados">Nenhum até agora</span>
+            </p>
+            <p class="conteudo__mensagem" id="mostrar-mensagem"></p>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- SCRIPT -->
+    <script src="script.js" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>

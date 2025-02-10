@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresso Online</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/J057k74/imagem-ingresso-online.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo conteudo__bloco conteudo__horizontal conteudo__horizontal-espaco">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Ingresso Online</h1>
+            
+            <div class="conteudo__bloco conteudo__vertical">
+                <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade de ingressos" class="conteudo__caixa-texto"/>
+                <select class="conteudo__caixa-texto" id="tipo">
+                    <option value="superior">Superior</option>
+                    <option value="inferior">Inferior</option>
+                    <option value="pista">Pista</option>
+                </select>
+            </div>
+
+            <div class="conteudo__bloco conteudo__horizontal">
+                <button onclick="comprar()" id="comprar" class="conteudo__botao conteudo__botao-azul">Comprar</button>
+            </div>
+
+            <p class="conteudo__mensagem" id="mensagem"></p>
+        </section>
+
+        <section class="conteudo__secao">
+            <h2 class="conteudo__subtitulo">Total de ingressos</h2>
+
+            <ul class="conteudo__menu-lista">
+                <li class="conteudo__menu-item">
+                    Superior: <span class="conteudo__destaque" id="tipo-superior">100</span>
+                </li>
+
+                <li class="conteudo__menu-item">
+                    Inferior: <span class="conteudo__destaque" id="tipo-inferior">100</span>
+                </li>
+
+                <li class="conteudo__menu-item">
+                    Pista: <span class="conteudo__destaque" id="tipo-pista">100</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- SCRIPT -->
+    <script src="script.js" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>

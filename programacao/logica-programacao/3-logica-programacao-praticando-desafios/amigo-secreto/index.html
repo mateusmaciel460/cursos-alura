@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/Zpmmp3qc/imagem-amigo-secreto.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo conteudo__bloco conteudo__horizontal conteudo__horizontal-espaco">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Amigo secreto</h1>
+
+            <div class="conteudo__bloco conteudo__vertical">
+                <input type="text" id="amigo-secreto" name="amigo-secreto" placeholder="Nome do amigo secreto" class="conteudo__caixa-texto"/>
+            </div>
+
+            <div class="conteudo__bloco conteudo__horizontal">
+                <button onclick="adicionar()" id="adicionar" class="conteudo__botao conteudo__botao-azul">Adicionar</button>
+                <button onclick="sortear()" id="sortear" class="conteudo__botao conteudo__botao-laranja">Sortear</button>
+                <button onclick="reiniciar()" id="reiniciar" class="conteudo__botao conteudo__botao-cinza" disabled>Reiniciar</button>
+            </div>
+
+            <p class="conteudo__mensagem" id="mensagem"></p>
+        </section>
+
+        <section class="conteudo__secao conteudo__caixa">
+            <ul class="conteudo__menu-lista">
+                <h2 class="conteudo__subtitulo">Amigos adicionados: </h2>
+                <li class="conteudo__menu-item" id="exibir-amigos-adicionados"></li>
+            </ul>
+
+            <ul class="conteudo__menu-lista">
+                <h2 class="conteudo__subtitulo">Amigos sorteados: </h2>
+                <li class="conteudo__menu-item" id="exibir-amigos-sorteados"></li>
+            </ul>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- SCRIPT -->
+    <script src="script.js" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alugames</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/hxRm4DK5/imagem-alugames.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Alugames</h1>
+            <p class="conteudo__texto" id="mostrar-quantidade-jogos-alugados">Jogos alugados: 0</p>
+
+            <div class="conteudo__bloco conteudo__horizontal" id="jogos">
+                <div class="conteudo__bloco conteudo__vertical" id="jogo-1">
+                    <img src="images/monopoly.png" alt="Jogo - Monopoly" class="conteudo__imagem"/>
+                    <h2 class="conteudo__subtitulo">Monopoly</h2>
+                    <button onclick="alugar(1)" class="conteudo__botao conteudo__botao-azul">Alugar</button>
+                </div>
+                <div class="conteudo__bloco conteudo__vertical" id="jogo-2">
+                    <img src="images/takenoko.png" alt="Jogo - Takenoko" class="conteudo__imagem"/>
+                    <h2 class="conteudo__subtitulo">Takenoko</h2>
+                    <button onclick="alugar(2)" class="conteudo__botao conteudo__botao-azul">Alugar</button>
+                </div>
+                <div class="conteudo__bloco conteudo__vertical" id="jogo-3">
+                    <img src="images/ticket-to-ride.png" alt="Jogo - Ticket to Ride" class="conteudo__imagem"/>
+                    <h2 class="conteudo__subtitulo">Ticket to Ride</h2>
+                    <button onclick="alugar(3)" class="conteudo__botao conteudo__botao-azul">Alugar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- SCRIPT -->
+    <script src="script.js" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>

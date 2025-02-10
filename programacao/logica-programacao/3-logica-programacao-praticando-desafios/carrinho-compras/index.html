@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="shortcut icon" href="https://i.ibb.co/v4TZHfM9/imagem-carrinho-compras.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <!-- CONTEÚDO -->
+    <main class="conteudo conteudo__bloco conteudo__horizontal conteudo__horizontal-espaco">
+        <section class="conteudo__secao">
+            <h1 class="conteudo__titulo">Carrinho de compras</h1>
+
+            <div class="conteudo__bloco conteudo__vertical">
+                <input type="number" id="quantidade" name="quantidade" placeholder="Quantidade" class="conteudo__caixa-texto"/>
+
+                <select class="conteudo__caixa-texto" id="produto">
+                    <option value="R$ 4500 - Notebook">R$ 4500 - Notebook</option>
+                    <option value="R$ 2500 - Celular">R$ 2500 - Celular</option>
+                    <option value="R$ 3000 - Caixa de som">R$ 3000 - Caixa de som</option>
+                </select>
+            </div>
+
+            <div class="conteudo__bloco conteudo__horizontal">
+                <button onclick="adicionar()" id="adicionar" class="conteudo__botao conteudo__botao-azul">Adicionar</button>
+                <button onclick="reiniciar()" id="reiniciar" class="conteudo__botao conteudo__botao-cinza" disabled>Reiniciar</button>
+            </div>
+
+            <p class="conteudo__mensagem" id="mensagem"></p>
+        </section>
+
+        <section class="conteudo__secao">
+            <h2 class="conteudo__subtitulo">Produtos adicionados</h2>
+
+            <ul class="conteudo__menu-lista conteudo__bloco conteudo__vertical" id="mostrar-produtos-carrinho"></ul>
+
+            <h2 class="conteudo__subtitulo">Total: <span class="conteudo__destaque" id="mostrar-preco-geral">R$ 0</span></h2>
+        </section>
+    </main>
+    <!-- CONTEÚDO -->
+
+    <!-- SCRIPT -->
+    <script src="script.js" defer></script>
+    <!-- SCRIPT -->
+</body>
+</html>
