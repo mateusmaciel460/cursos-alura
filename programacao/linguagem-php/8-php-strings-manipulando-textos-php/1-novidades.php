@@ -1,19 +1,20 @@
 <?php 
 
-$nome = 'Mateus Maciexl';
+echo "-----------------------------------------" . PHP_EOL;
 
-echo "--------------------------------------------";
+$url = "https://site.com.br";
+echo "URL: $url" . PHP_EOL;
 
-// Verificar se uma palavra x está em uma string
-$verificarFamilia = str_contains($nome, 'Maciels') ? "$nome pertence é da família Maciel" : "$nome não é da família Maciel";
-echo PHP_EOL . $verificarFamilia;
+// Verifica se uma string x começa com a string y
+$verificarInicialUrl = str_starts_with($url, 'https') ? 'A url começa com https' : 'A url não com https';
+echo $verificarInicialUrl . PHP_EOL;
 
-// Verificar se a string começa com a palavra x
-$verificarInicioDaPalavra = str_starts_with($nome, 'Ma') ? "A palavra Ma começa em $nome" : "A palavra Ma não começa em $nome";
-echo PHP_EOL . $verificarInicioDaPalavra;
+// Veririca se uma string x termina com a string y
+$verificarFinalUrl = str_ends_with($url, '.br') ? 'A url termina com .br, então é domínio brasileiro' : 'A url não termina com .br, então não é domínio brasileiro';
+echo $verificarFinalUrl . PHP_EOL;
 
-// Verificar se uma string termina com a palavra x 
-$verificarFimPalavra = str_ends_with($nome, 'el') ? "A palavra el termina em $nome" : "A palavra el não termina em $nome";
-echo PHP_EOL . $verificarFimPalavra;
+// Verifica se uma string x existe em uma string y
+$verificarSePalavraExiste = str_contains($url, 'site') ? "Sim, a palavra site existe na url" : "Não, a palavra site não existe na url";
+echo $verificarSePalavraExiste . PHP_EOL;
 
-echo PHP_EOL . "--------------------------------------------\n";
+echo "-----------------------------------------" . PHP_EOL;

@@ -1,18 +1,25 @@
 <?php 
 
-// explode, implode, trim, ltrim e rtrim
+$dados = 'Mateus,23,solteiro,mateus@email.com';
 
-$nome = 'Mateus Maciel';
-list($nome, $sobrenome) = explode(' ', $nome);
-echo "Nome: $nome / Sobrenome: $sobrenome" . PHP_EOL;
+// explode -> transforma uma string em array com um separador
+$arrayDados = explode(',', $dados);
+var_dump($arrayDados);
 
-$informacoes = 'Mateus,mateus@email.com,24,solteiro';
-list($nome, $email, $idade, $status) = explode(',', $informacoes);
-echo "Nome: $nome, email: $email, idade: $idade, status: $status" . PHP_EOL;
+// implode -> transforma um array em string 
+$texto = implode(',', $arrayDados);
+echo $texto . PHP_EOL;
 
-$telefones = [
-    '(88) 8888-8888', '(95) 9999-9999', '(56) 3457-8769'
-];
+$textoParaAparar = '.,Mateus,Fernando,Silva,Nunes,.,';
 
-$listaTelefones = implode(', ', $telefones) . PHP_EOL;
-echo $listaTelefones;
+// Aparar o texto acima, quanto do lado direito e esquerdo
+$apararTextoCompletamente = trim($textoParaAparar, '.,p');
+echo $apararTextoCompletamente . PHP_EOL;
+
+// Aparar o texto, apenas do lado esquerdo
+$apararTextoLadoEsquerdo = ltrim($textoParaAparar, ',.');
+echo $apararTextoLadoEsquerdo . PHP_EOL;
+
+// Aparar o texto, apenas do lado direito
+$apararTextoLadoDireito = rtrim($textoParaAparar, ',.');
+echo $apararTextoLadoDireito . PHP_EOL;
