@@ -5,7 +5,6 @@ namespace BancoOnline\Modelos\Conta;
 use BancoOnline\Traits\ContaBancariaTrait;
 
 class ContaCorrente extends ContaBancaria
-
 {
     use ContaBancariaTrait;
 

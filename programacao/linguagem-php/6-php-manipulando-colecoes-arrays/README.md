@@ -2,51 +2,51 @@
 
 ### 2 - Ordenando arrays
 
-|Função|Significado|Implementação|
-|------|-----------|-------------|
-|sort| retorna o array em ordem crescente, alterando o seu índice| sort($array)|
-|rsort|retorna o array em ordem decrescente, alterando o sue índice|rsort($array)|
-|asort|retorna o array em ordem crescente, sem mudar seu índice|asort($array)|  
-|arsort|retorna o array em ordem decrescente, sem mudar seu índice|arsort($array)|
-|ksort|retorna o array em ordem crescente, baseando-se em sua chave|ksort($array)|
-|krsort|retorna o array em ordem decrescente, baseando-se em sua chave|krsort($array)|
-|usort|retorna o array com uma regra específica, alterando o seu índice| usort($array, 'nome da função')|
+|#|Função|Aplicação|Explicação|
+|-|------|---------|----------|
+|01|**sort**|sort($array)|sortear em ordem crescente (elementos), alterando a posição original da chave.|
+|02|**rsort**|rsort($array)|sortear em ordem decrescente (elementos), alterando a posição original da chave.|
+|03|**asort**|asort($array)|sortear em ordem crescente (elementos), sem alterar a posição original da chave.|
+|04|**arsort**|arsort($array)|sortear em ordem decrescente (elementos), sem alterar a posição original da chave.|
+|05|**ksort**|ksort($array)|sortear em ordem crescente (chaves).|
+|06|**krsort**|krsort($array)|sortear em ordem decrescente (chaves).|
+|07|**usort**|usort($array)|sortear em uma ordem estabelecida pelo usuário.|
 
 ### 3 - Verificações
 
-|Função|Significado|Implmentação|
-|------|-----------|------------|
-|gettype|Informa o tipo da variável|gettype($variavel)|
-|is_array|Informa se a variável é um array|is_array($array)|
-|array_is_list|Verifica se uma variável é uma lista|array_is_list($variavel)|
-|array_in|verifica se um valor está contido naquele array|array_in($valor, $array, true), terceiro opcional|
-|isset|verifica se tem um valor que seja não nulo no array|isset($array['chave'])|
-|array_search|retorna a chave de acordo com o valor pesquisado|array_search($valor, $array, true), terceiro opcional|
+|#|Função|Aplicação|Explicação|
+|-|------|---------|----------|
+|01|**gettype**|gettype($variavel)|retorna o tipo primitivo de uma variável|
+|02|**is_array**|is_array($array)|verifica se a variável é um array|
+|03|**array_is_list**|array_is_list($array)|verifica se a variável é uma lista|
+|04|**in_array**|in_array($elemento, $array)|verifica a existência de um elemento x no array|
+|05|**isset**|isset($array[$chave])|verifica a existência de um elemento na chave x|
+|06|**array_search**|array_search($elemento, $array)|retorna a chave do elemento informado|
 
 ### 4 - Manipulando arrays
 
-|Função|Significado|Implementação|
-|------|-----------|-------------|
-|array_dif|vai retornar os elementos modificados entre os arrays informados|array_dif($array1, $array2)|
-|array_dif_key|vai retornar a chave modificada entre os arrays informados|array_dif_key($array1, $array2)|
-|array_dif_assoc|vai retornar os elementos + chaves modificados entre os arrays informados|array_dif_assoc($array1, $array2)|
-|array_keys|retorna apenas as chave do array informado|array_keys($array)|
-|array_values|retorna apenas os elementos do array informado|array_values($array)|
-|array_combine|vai pegar um valor para chave e outro para elemento, formando um novo array|array_combine($valores1, $valores2), mesmo tamanho|
-|array_flip|a chave vai ser elemento, e o elemento vai ser chamado, segundo o array informado|array_flip($valores1, $valores2)|
-|array_merge|vai pegar os elementos do primeiro e segundo array, formando um novo array|array_merge($array1, $array2)|
-Spread operator|vai pegar uma série de arrays/outros tipos e formar um array mãe|...$array1, 6, ...$array2, "Mateus"|
+|#|Função|Aplicação|Explicação|
+|-|------|---------|----------|
+|01|**array_diff**|array_diff($array1, $array2)|retorna o elemento modificado no $array2|
+|02|**array_diff_key**|array_diff_key($array1, $array2)|retorna a chave modificada no $array2|
+|03|**array_diff_assoc**|array_diff_assoc($array1, $array2)|retorna a chave e elemento modificado no $array2|
+|04|**array_keys**|array_keys($array, $elemento)|retorna a chave do elemento informado|
+|05|**array_values**|array_values($array)|retorna todos os elementos de um array|
+|06|**array_combine**|array_combine($array1, $array2)|forma um novo array usando os elementos do $array1 e $array2|
+|07|**array_flip**|array_flip($array)|inverte a chave pelo elemento, e o elemento pela chave|
+|08|**array_merge**|array_merge($array1, $array2)|mescla os dois arrays em um array único|
 
 ### 5 - Mais manipulações
 
-|Função|Significado|Implementação|
-|------|-----------|-------------|
-|array_push|adiciona uma sequência de elementos no final do array|array_push($array, $valor1, $valor2, $valor3)|
-|array_unshift|adiciona uma sequência de elementos no inicio do array|array_unshift($array, $valor1, $valor2, $valor3)|
-|array_shift|remove o primeiro elemento de um array|array_shift($array)|
-|array_pop|remove o último elemento de um array|array_pop($array)|
-|list|separa os valores do array, atribuindo em variáveis (tupla) |list($variavel1, $variavel2) = $array|
-|extract|retorna os valores de cada elemento fora de um array|extract($array), variável igual o nome da chave|
-|compact|retorna os valores de cada elemento dentro de um array|compact($array)|
+|#|Função|Aplicação|Explicação|
+|-|------|---------|----------|
+|01|**array_push**|array_push($array, $valor)|inserir um elemento na última posição do array|
+|02|**array_unshift**|array_unshift($array, $valor)|inserir um elemento na primeira posição do array|
+|03|**array_shift**|array_shift($array)|remove o primeiro elemento de um array|
+|04|**array_pop**|array_pop($array)|remove o último elemento de um array|
+|05|**extract**|extract($array)|retorna o elemento da chave|
+|06|**compact**|compact('chave')|retorna o elemento da chave, usando list()|
+
+#
 
 Atenciosamente, Mateus Maciel (@mateusmaciel460).
