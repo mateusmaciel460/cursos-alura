@@ -1,51 +1,23 @@
-# PHP OO - Herança, Polimorfismo, Encapsulamento e Interfaces
+# PHP OOP - Herança, Polimorfismo e Interfaces
 
-## Classes
+![](https://img.shields.io/badge/linguagem-php-purple)
+![](https://img.shields.io/badge/paradigma-oop-orange)
 
-|#|Classe|Interface|Trait|Serviço|
-|-|------|---------|-----|-------|
-|01|Funcionario||FuncionarioTrait||
-|02|Desenvolvedor||FuncionarioTrait|BonificacaoFuncionario|
-|03|Gerente|Autenticavel|FuncionarioTrait|BonificacaoFuncionario|
-|04|Conta Bancaria|Operavel|ContaBancariaTrait||
-|05|Conta Poupança||ContaBancariaTrait||
-|06|Conta Corrente||ContaBancariaTrait|||
+## Modelagem
 
-## Polimorfismo
+|Classes|Propriedades|
+|-------|------------|
+|Banco|nome, endereco, listaContas, listaClientes|
+|Cliente|nome, cpf, endereco|
+|Conta|numero, saldo, titular|
+|Conta Corrente|limiteCredito|
+|Conta Poupança|taxaRendimento|
 
-### Calcular bonificação de colaboradores (muitas formas)
+## Métodos
 
-```bash
-# Funcionario.php
-abstract public function calcularBonificacao(): int;
-```
-
-```bash
-# Funcionario.php > Desenvolvedor
-public function calcularBonificacao(): int
-{
-    return 2000;
-}
-```
-```bash
-# Funcionario.php > Gerente
-public function calcularBonificacao(): int
-{
-    return 4000;
-}
-```
-
-## Encapsulamento
-
-```bash
-Servicos > BonificacaoFuncionario.php
-
-class BonificacaoFuncionario 
-{
-    private int $totalBonificacao = 0;
-}
-```
-
-#
+- [x] Banco: **adicionar cliente**, **removerCliente**, **adicionar conta**, **remover conta**.
+- [x] Conta: **depositar**, **sacar**, **transferir** e **retornarSaldo**.
+- [x] Conta Corrente: **calcularTarifaMensal**.
+- [x] Conta Poupança: **calcularRendimento**.
 
 Atenciosamente, Mateus Maciel (@mateusmaciel460).
