@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../imagens/imagem-comum.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu conteudo__horizontal">
+            <a href="#" onclick="buscarComponente(1)" class="cabecalho__link">Home</a>
+            <a href="#sobre" onclick="buscarComponente(2)" class="cabecalho__link">Sobre</a>
+            <a href="#produtos" onclick="buscarComponente(3)" class="cabecalho__link">Nossos produtos</a>
+            <a href="#contato" onclick="buscarComponente(4)" class="cabecalho__link">Entre em contato</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+        <section class="conteudo__apresentacao conteudo__vertical">
+            <h1 class="conteudo__titulo">Mudas Florestas</h1>
+            <p class="conteudo__texto">Enfeite seu jardim sem sair de casa</p>
+        </section>
+
+        <section class="conteudo__apresentacao conteudo__horizontal" id="componente"></section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape__texto">Obrigado por escolher Muda Floresta</p>
+        <p class="rodape__texto">Mateus Maciel em 2025</p>
+    </footer>
+
+    <script src="js/index.js" defer></script>
+</body>
+</html>
