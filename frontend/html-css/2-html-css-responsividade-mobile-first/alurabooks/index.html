@@ -9,52 +9,34 @@
 </head>
 <body>
     <header class="cabecalho modelo__horizontal">
-        <div class="cabecalho__bloco modelo__horizontal">
-            <div class="cabecalho__apresentacao modelo__horizontal">
-                <img src="images/cabecalho/logo.png" alt="Logo do Alura Books"/>
-                <h1 class="modelo__titulo">Alura<strong class="modelo__anti-destaque">Books</strong></h1>
-            </div>
-    
-            <nav class="cabecalho__menu-lista modelo__horizontal texto-maiusculo">
-                <li class="cabecalho__menu-item">
-                    <a href="#" class="cabecalho__menu-link">Categorias</a>
-                </li>
-                <li class="cabecalho__menu-item">
-                    <a href="#" class="cabecalho__menu-link">Favoritos</a>
-                </li>
-                <li class="cabecalho__menu-item">
-                    <a href="#" class="cabecalho__menu-link">Minha estante</a>
-                </li>
-
-                <!-- LISTA DE OPÇÕES -->
-                <div class="cabecalho__opcoes texto-maiusculo modelo__vertical">
-                    <li class="cabecalho__opcoes-item">Programção</li>
-                    <li class="cabecalho__opcoes-item">Front-end</li>
-                    <li class="cabecalho__opcoes-item">Infraestrutura</li>
-                    <li class="cabecalho__opcoes-item">Business</li>
-                    <li class="cabecalho__opcoes-item">Design & UX</li>
-                </div>
-                <!-- LISTA DE OPÇÕES -->
-            </nav>
+        <div class="modelo__horizontal modelo__justifcado-alinhado--centro">
+            <img src="images/cabecalho/logo.png" alt="Logo do Alura Books"/>
+            <h1 class="modelo__titulo">
+                Alura<strong class="modelo__anti-destaque">Books</strong>
+            </h1>
         </div>
 
-        <div class="cabecalho__bloco">
-            <ul class="cabecalho__menu-lista modelo__horizontal"> 
-                <a href="#" class="cabecalho__menu-link modelo__horizontal" id="icone-favorito">
-                    <img src="images/cabecalho/icone-favorito.png" alt="Icone - Favorito" class="cabecalho__menu-imagem"/>
-                    <li class="cabecalho__menu-item">Favorito</li>
-                </a>
+        <ul class="modelo__horizontal texto-maiusculo modelo__justifcado-alinhado--centro">
+            <li><a href="#" class="modelo__link">Categorias</a></li>
+            <li><a href="#" class="modelo__link">Favoritos</a></li>
+            <li><a href="#" class="modelo__link">Minha estante</a></li>
+        </ul>
 
-                <a href="#" class="cabecalho__menu-link modelo__horizontal">
-                    <img src="images/cabecalho/icone-sacola.png" alt="Icone - Sacola" class="cabecalho__menu-imagem"/>
-                    <li class="cabecalho__menu-item">Minha sacola</li>
-                </a>
-                <a href="#" class="cabecalho__menu-link modelo__horizontal">
-                    <img src="images/cabecalho/icone-perfil.png" alt="Icone - Perfil" class="cabecalho__menu-imagem"/>
-                    <li class="cabecalho__menu-item">Minha sacola</li>
-                </a>
-            </ul>
-        </div>
+        <ul class="modelo__horizontal modelo__justifcado-alinhado--centro">
+            <li class="modelo__horizontal modelo__justifcado-alinhado--centro">
+                <img src="images/cabecalho/icone-sacola.png" alt="Icone - sacola"/>
+                <a href="#" class="modelo__link">Minha sacola</a>
+            </li>
+            <li class="modelo__horizontal modelo__justifcado-alinhado--centro">
+                <img src="images/cabecalho/icone-perfil.png" alt="Icone - perfil"/>
+                <a href="#" class="modelo__link">Meu perfil</a>
+            </li>
+
+            <li class="modelo__horizontal modelo__justifcado-alinhado--centro">
+                <img src="images/cabecalho/icone-favorito.png" alt="Icone - favorito"/>
+                <a href="#" class="modelo__link">Meus favoritos</a>
+            </li>
+        </ul>
     </header>
 
     <main class="conteudo">
@@ -154,18 +136,10 @@
         </section>
     </main>
 
-    <footer class="rodape modelo__espacamento modelo__horizontal">
+    <footer class="rodape">
         <h2 class="modelo__subtitulo">Grupo Alura</h2>
 
-        <ul class="rodape__menu-lista modelo__vertical" id="elemento-multiplicador-1">
-            <li class="rodape__titulo texto-maiusculo">Educação</li>
-        </ul>
-        <ul class="rodape__menu-lista modelo__vertical" id="elemento-multiplicador-2">
-            <li class="rodape__titulo texto-maiusculo">Educação Online</li>
-        </ul>
-        <ul class="rodape__menu-lista modelo__vertical" id="elemento-multiplicador-3">
-            <li class="rodape__titulo texto-maiusculo">Comunidade</li>
-        </ul>
+        <div class="rodape__lista modelo__horizontal" id="elemento-multiplicador"></div>
     </footer>
 
     <script src="js/script.js" defer></script>

@@ -78,8 +78,9 @@ body {
     border-radius: 1em;
     color: #FFFFFF;
     font-size: 16px;
-    padding: 1em 6em;
     outline: none;
+    padding: 1em 6em 1em 3em;
+    text-align: center;
 }
 
 .modelo__caixa-texto::placeholder {
@@ -99,6 +100,11 @@ body {
 .modelo__justifcado-alinhado--centro {
     align-items: center;
     justify-content: center;
+}
+
+.modelo__link {
+    text-decoration: none;
+    color: #000000;
 }
 
 section {

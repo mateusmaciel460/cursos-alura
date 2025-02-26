@@ -1,11 +1,7 @@
-.rodape {
-    align-items: start !important;
-    justify-content: space-around !important;
-}
-
-.rodape__titulo {
-    color: #858585;
-    margin-bottom: 0.3em;
+.rodape {   
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
 }
 
 .rodape__menu-lista {
@@ -13,8 +9,19 @@
     padding-left: 10px;
 }
 
-@media screen and (max-width: 428px) {
+.rodape__menu-titulo {
+    color: #858585;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1024px) {
     .rodape__menu-lista {
+        border: none;
+    }
+}
+
+@media screen and (max-width: 827px) {
+    .rodape__lista {
         display: none !important;
     }
 }
