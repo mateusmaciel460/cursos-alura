@@ -1,0 +1,16 @@
+.conteudo__banner {
+    text-align: center;
+}
+
+.conteudo__banner input {
+    background: url('../../images/icone-pesquisa.png');
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 428px) {
+    .conteudo__banner .conteudo__caixa-texto {
+        font-size: 12px;
+        width: 100%;
+    }
+}

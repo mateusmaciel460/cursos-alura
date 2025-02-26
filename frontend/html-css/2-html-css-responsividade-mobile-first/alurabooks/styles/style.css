@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('./cabecalho.css');
+@import url('./secoes/banner.css');
+@import url('./secoes/produto.css');
+@import url('./secoes/email.css');
+@import url('./rodape.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #EBECEE;
+    font-family: 'Poppins', sans-serif;
+}
+
+.modelo__vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.modelo__horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.modelo__titulo {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.modelo__subtitulo {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.modelo__texto {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.modelo__anti-destaque {
+    font-weight: 400;
+}
+
+.texto-maiusculo {
+    text-transform: uppercase;
+}
+
+.texto-centro {
+    text-align: center;
+}
+
+.modelo__bloco {
+    background: #FFFFFF;
+    padding: 1em;
+}
+
+.modelo__fundo-azul {
+    background: #002F52;
+    color: #FFFFFF;
+}
+
+.modelo__espacamento {
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.modelo__caixa-texto {
+    background: transparent;
+    border: 2px solid #FFFFFF;
+    border-radius: 1em;
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 1em 6em;
+    outline: none;
+}
+
+.modelo__caixa-texto::placeholder {
+    color: #FFFFFF;
+    padding-right: 12px;
+    width: 100%;
+}
+
+.modelo__caixa-laranja {
+    background: #EB9B00;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 2em;
+    margin: 0.5em 0;
+}
+
+.modelo__justifcado-alinhado--centro {
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    padding-bottom: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+    .modelo__titulo {
+        font-size: 26px
+    }
+
+    .modelo__subtitulo {
+        font-size: 18px
+    }
+
+    .modelo__texto {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .modelo__caixa-texto {
+        font-size: 12px;
+        padding: 1;
+        width: 100%;
+    }
+}

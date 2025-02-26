@@ -1,0 +1,43 @@
+.conteudo__produto .modelo__titulo {
+    color: #EB9B00;
+}
+
+.conteudo__produto .modelo__subtitulo {
+    color: #002F52;
+}
+
+.conteudo__livros {
+    padding: 2em 0;
+}
+
+.conteudo__card {
+    background: #FFFFFF;
+    box-shadow: 0 0 0 0.2px #000000;
+    border-radius: 0.5em;
+    justify-content: space-around;
+}
+
+.conteudo__elemento {
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.conteudo__link {
+    background: #EB9B00;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 1em 0.5em;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.conteudo__autora {
+    align-items: start;
+}
+
+@media screen and (max-width: 1024px) {
+    .conteudo__card {
+        margin: 1em;
+    }
+}

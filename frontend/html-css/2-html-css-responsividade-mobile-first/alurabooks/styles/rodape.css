@@ -1,0 +1,20 @@
+.rodape {
+    align-items: start !important;
+    justify-content: space-around !important;
+}
+
+.rodape__titulo {
+    color: #858585;
+    margin-bottom: 0.3em;
+}
+
+.rodape__menu-lista {
+    border-left: 2px solid #858585;
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 428px) {
+    .rodape__menu-lista {
+        display: none !important;
+    }
+}

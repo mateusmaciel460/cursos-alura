@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Books</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="cabecalho modelo__horizontal">
+        <div class="cabecalho__bloco modelo__horizontal">
+            <div class="cabecalho__apresentacao modelo__horizontal">
+                <img src="images/cabecalho/logo.png" alt="Logo do Alura Books"/>
+                <h1 class="modelo__titulo">Alura<strong class="modelo__anti-destaque">Books</strong></h1>
+            </div>
+    
+            <nav class="cabecalho__menu-lista modelo__horizontal texto-maiusculo">
+                <li class="cabecalho__menu-item">
+                    <a href="#" class="cabecalho__menu-link">Categorias</a>
+                </li>
+                <li class="cabecalho__menu-item">
+                    <a href="#" class="cabecalho__menu-link">Favoritos</a>
+                </li>
+                <li class="cabecalho__menu-item">
+                    <a href="#" class="cabecalho__menu-link">Minha estante</a>
+                </li>
+
+                <!-- LISTA DE OPÇÕES -->
+                <div class="cabecalho__opcoes texto-maiusculo modelo__vertical">
+                    <li class="cabecalho__opcoes-item">Programção</li>
+                    <li class="cabecalho__opcoes-item">Front-end</li>
+                    <li class="cabecalho__opcoes-item">Infraestrutura</li>
+                    <li class="cabecalho__opcoes-item">Business</li>
+                    <li class="cabecalho__opcoes-item">Design & UX</li>
+                </div>
+                <!-- LISTA DE OPÇÕES -->
+            </nav>
+        </div>
+
+        <div class="cabecalho__bloco">
+            <ul class="cabecalho__menu-lista modelo__horizontal"> 
+                <a href="#" class="cabecalho__menu-link modelo__horizontal" id="icone-favorito">
+                    <img src="images/cabecalho/icone-favorito.png" alt="Icone - Favorito" class="cabecalho__menu-imagem"/>
+                    <li class="cabecalho__menu-item">Favorito</li>
+                </a>
+
+                <a href="#" class="cabecalho__menu-link modelo__horizontal">
+                    <img src="images/cabecalho/icone-sacola.png" alt="Icone - Sacola" class="cabecalho__menu-imagem"/>
+                    <li class="cabecalho__menu-item">Minha sacola</li>
+                </a>
+                <a href="#" class="cabecalho__menu-link modelo__horizontal">
+                    <img src="images/cabecalho/icone-perfil.png" alt="Icone - Perfil" class="cabecalho__menu-imagem"/>
+                    <li class="cabecalho__menu-item">Minha sacola</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="modelo__fundo-azul conteudo__banner modelo__vertical modelo__espacamento">
+            <h2 class="modelo__titulo">Já sabe por onde começar?</h2>
+            <p class="modelo__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
+            <input type="text" name="pesquisa" id="pesquisa" class="modelo__caixa-texto" placeholder="Qual será sua próxima leitura?"/>
+        </section>
+
+        <section class="conteudo__produto">
+            <div class="modelo__bloco">
+                <h2 class="modelo__titulo texto-centro texto-maiusculo">Últimos lançamentos</h2>
+            </div>
+
+            <div class="conteudo__livros modelo__horizontal modelo__justifcado-alinhado--centro">
+                <div class="conteudo__lista modelo__horizontal modelo__justifcado-alinhado--centro">
+                    <img src="images/livros/livro-1.png" alt="Livro book 01"/>
+                    <img src="images/livros/livro-1.png" alt="Livro book 01"/>
+                    <img src="images/livros/livro-1.png" alt="Livro book 01"/>
+                </div>
+                <div class="conteudo__card modelo__horizontal">
+                    <div class="conteudo__elemento modelo__vertical">
+                        <div class="modelo__vertical">
+                            <h2 class="modelo__titulo">Talvez você também se interesse por...</h2>
+                            <h3 class="modelo__subtitulo">Angular 11 e Firebase</h3>
+                            <p class="modelo__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+    
+                        <div class="conteudo__grupo">
+                            <img src="images/cabecalho/icone-favorito.png" alt="Icone de favoritos"/>
+                            <img src="images/cabecalho/icone-sacola.png" alt="Icone da sacola"/>
+                        </div>
+                    </div>
+                    <div class="conteudo__elemento modelo__vertical">
+                        <img src="images/angular.png" alt="Logo do Angular"/>
+                        <a href="#" class="conteudo__link">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="conteudo__produto">
+            <div class="modelo__bloco">
+                <h2 class="modelo__titulo texto-centro texto-maiusculo">Mais vendidos</h2>
+            </div>
+
+            <div class="conteudo__livros modelo__horizontal modelo__justifcado-alinhado--centro">
+                <div class="conteudo__lista modelo__horizontal modelo__justifcado-alinhado--centro">
+                    <img src="images/livros/livro-1.png" alt="Livro book 01"/>
+                    <img src="images/livros/livro-1.png" alt="Livro book 01"/>
+                    <img src="images/livros/livro-1.png" alt="Livro book 01"/>
+                </div>
+                <div class="conteudo__card modelo__horizontal">
+                    <div class="conteudo__elemento modelo__vertical">
+                        <div class="modelo__vertical conteudo__autora">
+                            <img src="images/icone-estrelas.png" alt="Icone de 5 estrelas"/>
+                            <h2 class="modelo__titulo">Autora do Mês</h2>
+                            <h3 class="modelo__subtitulo">Juliana Agarikov</h3>
+                            <p class="modelo__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                        </div>
+    
+                        <div class="conteudo__grupo">
+                            <img src="images/cabecalho/icone-favorito.png" alt="Icone de favoritos"/>
+                            <img src="images/cabecalho/icone-sacola.png" alt="Icone da sacola"/>
+                        </div>
+                    </div>
+                    <div class="conteudo__elemento modelo__vertical">
+                        <img src="images/perfil-escritora.png" alt="Logo do Angular"/>
+                        <a href="#" class="conteudo__link">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="modelo__fundo-azul conteudo__banner modelo__vertical modelo__espacamento">
+            <h2 class="modelo__titulo texto-centro texto-maiusculo">Tópicos visitados recentemente</h2>
+
+            <ul class="modelo__horizontal modelo__justifcado-alinhado--centro">
+                <li class="modelo__caixa-laranja">Android</li>
+                <li class="modelo__caixa-laranja">OO</li>
+                <li class="modelo__caixa-laranja">Marketing Digital</li>
+                <li class="modelo__caixa-laranja">Agile</li>
+                <li class="modelo__caixa-laranja">Startups</li>
+                <li class="modelo__caixa-laranja">HTML & CSS</li>
+                <li class="modelo__caixa-laranja">Java</li>
+                <li class="modelo__caixa-laranja">Python</li>
+            </ul>
+        </section>
+
+        <section class="conteudo__email modelo__horizontal modelo__espacamento">
+            <div class="modelo__vertical">
+                <h2 class="modelo__subtitulo">Fique por dentro das novidades!</h2>
+                <p class="modelo__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
+
+            <input type="email" name="email" id="email" placeholder="Cadastre seu e-mail" class="modelo__caixa-texto"/>
+        </section>
+    </main>
+
+    <footer class="rodape modelo__espacamento modelo__horizontal">
+        <h2 class="modelo__subtitulo">Grupo Alura</h2>
+
+        <ul class="rodape__menu-lista modelo__vertical" id="elemento-multiplicador-1">
+            <li class="rodape__titulo texto-maiusculo">Educação</li>
+        </ul>
+        <ul class="rodape__menu-lista modelo__vertical" id="elemento-multiplicador-2">
+            <li class="rodape__titulo texto-maiusculo">Educação Online</li>
+        </ul>
+        <ul class="rodape__menu-lista modelo__vertical" id="elemento-multiplicador-3">
+            <li class="rodape__titulo texto-maiusculo">Comunidade</li>
+        </ul>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>

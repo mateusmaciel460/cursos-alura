@@ -1,0 +1,20 @@
+.conteudo__email {
+    background: #FFFFFF;
+}
+
+.conteudo__email .modelo__caixa-texto {
+    background: url('../../images/icone-email.png');
+    background-repeat: no-repeat;
+    background-position: 10px;
+    border: 1px solid #002F52;
+    color: #002F52;
+}
+
+.conteudo__email .modelo__caixa-texto::placeholder {
+    color: #002F52;
+}
+
+.conteudo__email .conteudo__caixa-texto, 
+.conteudo__email .conteudo__caixa-texto::placeholder {
+    color: #002F52;
+}
